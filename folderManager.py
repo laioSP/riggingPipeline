@@ -6,7 +6,7 @@ import maya.mel as mel
 class projectManager:
     def __init__(self):
         self.user = os.getlogin()
-        self.mainPath = os.path.join('/home', self.user, 'shows')
+        self.mainPath = os.getcwd() #os.path.join('/home', self.user, 'shows')
         self.show = 'no show'
         self.asset = 'no asset'
         self.version = 'no versions'
